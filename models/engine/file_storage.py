@@ -64,15 +64,15 @@ class FileStorage:
             pass
 
         def reload(self):
-        """deserializes the JSON file to __objects"""
-        try:
-            with open(self.__file_path, 'r') as f:
-                jo = json.load(f)
-            for key in jo:
-                self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except:
-            pass
+            """deserializes the JSON file to __objects"""
+            try:
+                with open(self.__file_path, 'r') as f:
+                    jo = json.load(f)
+                for key in jo:
+                    self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
+            except:
+                pass
 
         def close(self):
-        """call reload() method for deserializing the JSON file to objects"""
-        self.reload()
+            """call reload() method for deserializing the JSON file to objects"""
+            self.reload()
