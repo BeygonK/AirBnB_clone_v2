@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""starts a Flask web application"""
+"""This moddule starts a Flask web application"""
 
 from flask import Flask, render_template
 from models import *
@@ -20,4 +20,5 @@ def teardown_db(exception):
     storage.close()
 
 if __name__ == '__main__':
+    """Runs the application"""
     app.run(host='0.0.0.0', port='5000')
