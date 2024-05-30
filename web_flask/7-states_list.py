@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""This moddule starts a Flask web application"""
+"""This module starts the web application"""
 
 from flask import Flask, render_template
-from models import *
 from models import storage
+
 app = Flask(__name__)
 
 
