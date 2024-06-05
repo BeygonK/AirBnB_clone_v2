@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""This is a storage representation of db"""
+"""
+Contains the class DBStorage
+"""
 
 import models
 from models.amenity import Amenity
