@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module starts the web application"""
 
+
 from flask import Flask, render_template
 from models import storage
 
